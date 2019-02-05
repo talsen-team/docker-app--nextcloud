@@ -6,13 +6,11 @@
 
 The server application nextcloud ready to run inside a docker container.
 
-# docker-app: nextcloud-database
-
 [![Docker Automated build](https://img.shields.io/docker/automated/talsenteam/docker-nextcloud-database.svg?style=for-the-badge)](https://hub.docker.com/r/talsenteam/docker-nextcloud-database/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/talsenteam/docker-nextcloud-database.svg?style=for-the-badge)](https://hub.docker.com/r/talsenteam/docker-nextcloud-database/)
 [![Docker Build Status](https://img.shields.io/docker/build/talsenteam/docker-nextcloud-database.svg?style=for-the-badge)](https://hub.docker.com/r/talsenteam/docker-nextcloud-database/)
 
-The server application nextcloud ready to run inside a docker container.
+An utility application for nextcloud ready to run inside a docker container.
 
 ## how to use
 
