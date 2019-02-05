@@ -1,5 +1,7 @@
 *
 
 !.gitignore
+!.gitmodules
+!bash-util
 !LICENCE
 !README.md
