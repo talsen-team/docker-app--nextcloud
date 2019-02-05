@@ -20,6 +20,19 @@ work-in-progress
 
 Any docker-compose--* tasks refer to the default dockerfile [nextcloud](docker/server--nextcloud/default.docker) and [nextcloud-database](docker/server--nextcloud-database/default.docker) as well as to the [docker-compose](docker-compose/server--nextcloud/default.docker-compose) configuration if required for command execution.
 
+- docker-compose--*
+  - docker-compose--compose--*
+    - [docker-compose--compose--create](bash-commands/docker-compose--compose--create.sh)  
+      Creates required docker containers and docker networks but does not start them.
+    - [docker-compose--compose--down](bash-commands/docker-compose--compose--down.sh)  
+      Stops and removes required docker containers and docker networks.
+    - [docker-compose--compose--up](bash-commands/docker-compose--compose--up.sh)  
+      Creates and starts required docker containers and docker networks.
+  - docker-compose--image--*
+    - [docker-compose--image--build](bash-commands/docker-compose--image--build.sh)  
+      Builds all required docker images referenced by the compose configuration (using build cache).
+    - [docker-compose--image--rebuild](bash-commands/docker-compose--image--rebuild.sh)  
+      Builds all required docker images referenced by the compose configuration (without using build cache).
 - git--*
   - [git--pull-and-update-submodules](bash-commands/git--pull-and-update-submodules.sh)  
     Rebase pulls the latest repository changes and the updates all git submodules if there are any.

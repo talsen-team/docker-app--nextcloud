@@ -3,6 +3,76 @@
     "tasks":
     [
         {
+            "label":          "docker-compose--compose--create",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--compose--create.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":          "docker-compose--compose--down",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--compose--down.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":          "docker-compose--compose--up",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--compose--up.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":          "docker-compose--image--build",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--image--build.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":          "docker-compose--image--rebuild",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--image--rebuild.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
             "label":         "git--pull-and-update-submodules",
             "type":          "shell",
             "command":       "/bin/bash",

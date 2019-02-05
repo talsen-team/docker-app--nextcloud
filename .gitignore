@@ -2,9 +2,18 @@
 
 !.vscode/
 !.vscode/tasks.json
-!.gitignore
-!.gitmodules
 !bash-commands
 !bash-util
+!docker/
+!docker/server--nextcloud/
+!docker/server--nextcloud/default.docker
+!docker/server--nextcloud-database/
+!docker/server--nextcloud-database/default.docker
+!docker-compose/
+!docker-compose/server--nextcloud/
+!docker-compose/server--nextcloud/default.docker-compose
+!.gitignore
+!.gitmodules
+!host.env
 !LICENCE
 !README.md

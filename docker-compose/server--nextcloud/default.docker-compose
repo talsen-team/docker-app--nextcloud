@@ -1,0 +1,44 @@
+version:                 '3'
+
+services:
+  server--nextcloud:
+    build:
+      context:           './../../docker/server--nextcloud'
+      dockerfile:        'default.docker'
+    container_name:      'server--nextcloud'
+    depends_on:
+      -                  'server--nextcloud-database'
+    image:               'talsenteam/docker-nextcloud:v15-apache'
+    networks:
+      network-nextcloud:
+        ipv4_address:    '10.1.0.2'
+    ports:
+      -                  '80:80'
+    restart:             'no'
+    volumes:
+      -                  '${HOST_PATH_TO_VOLUMES_ROOT}/server--nextcloud/var/www/html:/var/www/html'
+
+  server--nextcloud-database:
+    build:
+      context:           './../../docker/server--nextcloud-database'
+      dockerfile:        'default.docker'
+    container_name:      'server--nextcloud-database'
+    environment:
+      -                  'MYSQL_DATABASE=nextcloud'
+      -                  'MYSQL_PASSWORD=password'
+      -                  'MYSQL_RANDOM_ROOT_PASSWORD=yes'
+      -                  'MYSQL_USER=nextcloud'
+    image:               'talsenteam/docker-nextcloud-database:v5.5'
+    networks:
+      network-nextcloud:
+        ipv4_address:    '10.1.0.12'
+    restart:             'no'
+    volumes:
+      -                  '${HOST_PATH_TO_VOLUMES_ROOT}/server--nextcloud-database/var/lib/mysql:/var/lib/mysql'
+
+networks:
+  network-nextcloud:
+    driver:              'bridge'
+    ipam:
+      config:
+        - subnet:        '10.1.0.0/16'
