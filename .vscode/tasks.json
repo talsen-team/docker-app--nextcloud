@@ -1,0 +1,15 @@
+{
+    "version":                "2.0.0",
+    "tasks":
+    [
+        {
+            "label":         "git--pull-and-update-submodules",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args": [
+                             "bash-commands/git--pull-and-update-submodules.sh",
+            ],
+            "problemMatcher": [ ],
+        },
+    ]
+}
