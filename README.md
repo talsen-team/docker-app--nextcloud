@@ -20,4 +20,6 @@ work-in-progress
 
 Any docker-compose--* tasks refer to the default dockerfile [nextcloud](docker/server--nextcloud/default.docker) and [nextcloud-database](docker/server--nextcloud-database/default.docker) as well as to the [docker-compose](docker-compose/server--nextcloud/default.docker-compose) configuration if required for command execution.
 
-work-in-progress
+- git--*
+  - [git--pull-and-update-submodules](bash-commands/git--pull-and-update-submodules.sh)  
+    Rebase pulls the latest repository changes and the updates all git submodules if there are any.
