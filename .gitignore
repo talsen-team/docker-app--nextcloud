@@ -2,6 +2,7 @@
 
 !.gitignore
 !.gitmodules
+!bash-commands
 !bash-util
 !LICENCE
 !README.md
