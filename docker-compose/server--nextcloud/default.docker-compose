@@ -23,11 +23,8 @@ services:
       context:           './../../docker/server--nextcloud-database'
       dockerfile:        'default.docker'
     container_name:      'server--nextcloud-database'
-    environment:
-      -                  'MYSQL_DATABASE=nextcloud'
-      -                  'MYSQL_PASSWORD=password'
-      -                  'MYSQL_RANDOM_ROOT_PASSWORD=yes'
-      -                  'MYSQL_USER=nextcloud'
+    env_file:
+      -                  './../../container.env'
     image:               'talsenteam/docker-nextcloud-database:v5.5'
     networks:
       network-nextcloud:
