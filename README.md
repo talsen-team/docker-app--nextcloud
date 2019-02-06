@@ -14,7 +14,15 @@ An utility application for nextcloud ready to run inside a docker container.
 
 ## how to use
 
-work-in-progress
+To easily experiment with nextcloud, the following pre-requisites are preferred:
+
+1. Install [VS Code](https://code.visualstudio.com/), to easily use predefined [tasks](.vscode/tasks.json)
+2. Install any [ssh-askpass](https://man.openbsd.org/ssh-askpass.1) to handle sudo prompts required for docker  
+   (VS Code does not run as root user, so in order to perform sudo operations the [`sudo --askpass CMD`](bash/util/elevate.sh) feature is used)
+3. Install docker (at least version 18.09.1, build 4c52b90)
+4. Install docker-compose (at least version 1.21.2, build a133471)
+
+Then open the cloned repository directory with VS Code and use any of the custom tasks.
 
 ## custom VS Code tasks
 
