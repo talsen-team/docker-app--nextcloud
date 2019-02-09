@@ -30,7 +30,7 @@ Any docker-compose--* tasks refer to the default dockerfile [nextcloud](docker/s
 
 - browser--*
   - [browser--open-application-url](bash-commands/browser--open-application-url.sh)  
-    Opens the localhost docekr service URL in the default web-browser. The opened URL is defined in [host.env](host.env) by the variable HOST_SERVICE_URL.
+    Opens the localhost docker service URL in the default web-browser. The opened URL is defined in [host.env](host.env) by the variable HOST_SERVICE_URL.
 - docker-compose--*
   - docker-compose--compose--*
     - [docker-compose--compose--create](bash-commands/docker-compose--compose--create.sh)  
