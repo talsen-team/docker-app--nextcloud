@@ -51,6 +51,8 @@ Any docker-compose--* tasks refer to the default dockerfile [nextcloud](docker/s
   - docker-compose--image--*
     - [docker-compose--image--build](//github.com/talsen-team/docker-util--bash-commands/blob/master/docker-compose--image--build.sh)  
       Builds all required docker images referenced by the compose configuration (using build cache).
+    - [docker-compose--image--pull](//github.com/talsen-team/docker-util--bash-commands/blob/master/docker-compose--image--pull.sh)  
+      Pulls all required docker images referenced by the compose configuration from the [docker hub](//hub.docker.com).
     - [docker-compose--image--rebuild](//github.com/talsen-team/docker-util--bash-commands/blob/master/docker-compose--image--rebuild.sh)  
       Builds all required docker images referenced by the compose configuration (without using build cache).
   - docker-compose--log--*
