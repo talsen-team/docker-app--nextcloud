@@ -129,6 +129,20 @@
             "problemMatcher": [ ],
         },
         {
+            "label":          "docker-compose--image--pull",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--image--pull.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
             "label":          "docker-compose--image--rebuild",
             "type":           "shell",
             "command":        "/bin/bash",
