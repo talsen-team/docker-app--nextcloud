@@ -1,5 +1,6 @@
 # docker-app: nextcloud
 
+![GitHub tag (latest by date)](https://img.shields.io/github/tag-date/talsen-team/docker-app--nextcloud.svg?style=for-the-badge)
 [![Docker Automated build](https://img.shields.io/docker/cloud/automated/talsenteam/docker-nextcloud.svg?style=for-the-badge)](//hub.docker.com/r/talsenteam/docker-nextcloud/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/talsenteam/docker-nextcloud.svg?style=for-the-badge)](//hub.docker.com/r/talsenteam/docker-nextcloud/)
 [![Docker Build Status](https://img.shields.io/docker/cloud/build/talsenteam/docker-nextcloud.svg?style=for-the-badge)](//hub.docker.com/r/talsenteam/docker-nextcloud/)
