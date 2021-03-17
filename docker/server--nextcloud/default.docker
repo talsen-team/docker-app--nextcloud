@@ -1,1 +1,1 @@
-FROM nextcloud:20.0.8-apache
+FROM nextcloud:21.0.0-apache
