@@ -14,7 +14,7 @@ services:
           memory:     '768M'
         reservations:
           memory:     '256M'
-    image:               'talsenteam/docker-nextcloud:v20.0.6'
+    image:               'talsenteam/docker-nextcloud:v20.0.8'
     networks:
       network-nextcloud:
         ipv4_address:    '10.1.0.2'
