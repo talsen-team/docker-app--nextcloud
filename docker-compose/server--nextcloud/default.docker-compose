@@ -37,7 +37,7 @@ services:
           memory:     '128M'
     env_file:
       -                  './../../container.env'
-    image:               'talsenteam/docker-nextcloud-database:v5.7'
+    image:               'talsenteam/docker-nextcloud-database:v8.0.23'
     networks:
       network-nextcloud:
         ipv4_address:    '10.1.0.12'
