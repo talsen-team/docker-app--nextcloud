@@ -28,6 +28,8 @@ services:
     build:
       context:           './../../docker/server--nextcloud-database'
       dockerfile:        'default.docker'
+    cap_add:
+      - 'SYS_NICE'
     container_name:      'server--nextcloud-database'
     deploy:
       resources:
